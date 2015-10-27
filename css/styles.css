@@ -4,6 +4,10 @@ p{
     font-size: 32px;
 }
 
+div{
+    color:aliceblue
+}
+
 
 /*Use class selector to define style for elements*/
 .mun_keksima{
@@ -22,4 +26,7 @@ p{
 #whatevs_tyyli{
     
     margin: 100px;
+}
+
+div p{
 }
