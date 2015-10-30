@@ -26,12 +26,29 @@ $(document).ready(function(){
        
         console.log(data);
         
+        //get all keys(attribute names) from json object
+        console.log(Object.keys(data.rows[0]));
+        
+        //Create table headers dynamically
+        if(data.rows.length > 0 ){
+            var headers = Object.keys(data.rows[0]);
+            
+            var row = $("<tr></tr>");
+            for (var i = 1; i < headers.length; i++){
+                //create header and add it to row
+                $("<th>" + headers[i] + "</th>").appendTo(row);
+            }
+            //add row to thead element
+            $(row).appendTo("thead");
+        }
+        //Create table contents dynamically
         for(i=0; i < data.rows.length; i++){
             
             var html = "<tr>" +
                         "<td>" +data.rows[i].name + "</td>" +
                         "<td>" +data.rows[i].address + "</td>" +
                         "<td>" +data.rows[i].age + "</td>" +
+                        "<td>" +data.rows[i].email + "</td>" +
                         "</tr>";
             $(html).appendTo("tbody");
         }

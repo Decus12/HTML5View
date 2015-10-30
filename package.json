@@ -1,0 +1,25 @@
+{
+  "name": "html5view",
+  "version": "1.0.0",
+  "description": "harj'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decus12/HTML5View.git"
+  },
+  "keywords": [
+    "harj"
+  ],
+  "author": "Decus12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Decus12/HTML5View/issues"
+  },
+  "homepage": "https://github.com/Decus12/HTML5View#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
