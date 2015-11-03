@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Decus12/HTML5View#readme",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "mongoose": "^4.2.3"
   }

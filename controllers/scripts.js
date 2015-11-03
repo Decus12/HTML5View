@@ -1,12 +1,17 @@
 console.log("here we go");
+
+//This variable is shown to every function
+//var g-person_data;
+
 $(document).ready(function(){
+    
     
     console.log("jquery onload triggered");
     $("nav").css("background-color","lightblue")
         .css("padding","20px").css("border-radius","8px");
     
-    $(".about").html("<b>koivari</b>");
-    $("[data-dummy]").html("<p>owpworpo</p>");
+    $(".about").html("<b>ggg</b>");
+    $("[data-dummy]").html("<p>gg</p>");
     
     
     /*var data = document.getElementsByTagName("nav");
@@ -48,13 +53,37 @@ $(document).ready(function(){
                         "<td>" +data[i].name + "</td>" +
                         "<td>" +data[i].address + "</td>" +
                         "<td>" +data[i].age + "</td>" +
-                        "<td>" +data[i].email + "</td>" +
+                        "<td><input type='button' id=" + data[i]._id + " value='modify'/></td>" +
                         "</tr>";
             $(html).appendTo("tbody");
         }
+            $("[type=button]").click(function(click_data){
+    
+                for( i = 0; i < data.length; i++){
+                    
+                    //check if id from button matches one of person id
+                    if (click_data.currentTarget.id == data[i]._id)
+                    {
+                        buildModifyUI(data[i]);
+                        break;
+                    }
+                    
+                }
+    });
     });
     
+    
+    // Get all elements from DOM where element has attribute 'type' with value 'button'.
+    //Then add event handler for click event for each of them
+
 });
+
+function buildModifyUI(person_data){
+    
+    var html = "<input type='text' value ='" + person_data.name + "'/>";
+    
+    $("body").html(html);
+}
 /*
 window.onload = function(event){
     

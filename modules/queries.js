@@ -17,4 +17,12 @@ exports.getAllPersons = function(req,res){
     });
 }
 
+//This function saves new person information to person collection
+exports.saveNewPerson = function(req,res){
 
+    var personTemp = new db.Person(req.body);
+    //save it to database
+    personTemp.save(function(err,ok){
+    res.send("Database action done");
+    });
+}
