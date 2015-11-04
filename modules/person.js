@@ -11,8 +11,14 @@ router.get('/',function(req,res){
 router.post('/',function(req,res){
         db.saveNewPerson(req,res);
                                  });
-router.put('/',function(req,res){});
+router.put('/',function(req,res){
 
-router.delete('/',function(req,res){});
+    db.updatePerson(req,res);
+});
+
+router.delete('/:id',function(req,res){
+
+db.deletePerson(req,res);
+});
 
 module.exports = router;
