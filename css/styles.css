@@ -1,32 +1,49 @@
-/*use element selector to select all the elements for this style*/
+/*use element selector to select all p elements for this style*/
 p{
-    color: Black;
+    
+    color: greenyellow;
     font-size: 32px;
 }
 
-div{
-    color:black
-}
-
-
 /*Use class selector to define style for elements*/
 .mun_keksima{
+    
     background-color: aquamarine;
 }
 
 .fancy{
-    color: green;
+    
+    color: black;
     border: 2px;
-    background-color: aqua;
+    background-color: red;
     border-radius: 8px;
 }
 
-/*use id selector to define style*/
-
-#whatevs_tyyli{
+/*Use id selector to define style*/
+#joku_tyyli{
     
     margin: 100px;
 }
 
-div p{
+.login_container{
+    
+    width: 500px;
+    margin: 8px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: darksalmon;
+    padding: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

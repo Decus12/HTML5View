@@ -1,2 +1,2 @@
 # HTML5View
-Esimerkki dynaamisen web-sivun tekemisestä HTML5:lla, CSS3:lla ja javascriptillä (jquery&amp;boostrap)
+Example how to craete a dynamic web page using HTML5, CSS3 and JavaScript (mainly with jquery and boostrap)

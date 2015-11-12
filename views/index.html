@@ -1,50 +1,24 @@
 <!doctype html>
-<html lang="fi">
+<html>
     <head>
         <meta charset="utf-8">
-        <title>Haa!></title>
-        <link href="/css/styles.css" type="text/css"
-              rel="stylesheet">
-        <link href="/css/bootstrap.min.css" type="text/css"
-                rel="stylesheet">
-        <link href="/css/bootstrap-theme.min.css" type="text/css"  
-              rel="stylesheet">
+        <title>Login Friends</title>
+        <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="../css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+        <link href="../css/styles.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <p>Hoo!</p>
-        <div>
-            <nav>
-                <a href="http://www.kaleva.fi">kaleva</a>
-                <a href="http://www.iltasanomat.fi">iltapaska</a>
-                <a href="modify.html">modify users</a>
-            
-            </nav>
-            <section>
-            <h1 class="about">About</h1>
-                <table class="table">
-                    <thead>
-                    <!--<tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Age</th>
-                    </tr>-->
-                    </thead>
-                    <tbody>
-                    
-                    </tbody>
-                </table>
-            </section>
-            <footer data-dummy="">dkgg</footer>
+        <div class="login_container">
+            <h3>Login or Register to Friends App!</h3>
+            <form>
+                <input id="username" type="text" placeholder="username" class="form-control"><br/>
+                <input id="password" type="password" placeholder="password" class="form-control"><br/>
+                <input id="login" type="button" class="btn btn-default" value="Login">
+                <input id="register" type="button" class="btn btn-default" value="Register">
+            </form>
+            <p id="status">Not Logged In</p>
         </div>
-        
-        <!--<div class="mun_keksima">jee</div>
-        <div class="fancy">ips</div>
-        <p id="whatevs_tyyli">tips</p>
-        <p id="para1">"Daa"</p>
-
-        <input type="color" class="nice"/>
-        -->
-        <script src="/lib/jquery-2.1.4.min.js"></script>
-        <script src="/controllers/scripts.js"></script>
+        <script src="../lib/jquery-2.1.4.min.js"></script>
+        <script src="../controllers/login_script.js"></script>
     </body>
 </html>
